@@ -4,13 +4,15 @@ Changes
 0.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Corrected the classifiers.
 
 
 0.0.2 (2012-09-06)
 ------------------
 
 - Adding missing meta information.
+- The egg has correct classifiers, but the egg tagged as 0.0.2
+  has not!
 
 
 0.0.1 (2012-09-06)
