@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='gs_export',
-    version='0.0.5',
+    version='0.0.6.dev0',
     author='Patrick Gerken',
     author_email='gerken@patrick-gerken.de',
     url='https://github.com/starzel/gs_export',
