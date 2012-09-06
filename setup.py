@@ -7,7 +7,7 @@ setup(
     version='0.0.1',
     author='Patrick Gerken',
     author_email='gerken@patrick-gerken.de',
-    url='',
+    url='https://github.com/starzel/gs_export',
     description='A little shell script to dump you GenericSetup profile somewhere and notify you for changes'
         ,
     long_description=open('README.txt').read() + '''
