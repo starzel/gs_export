@@ -1,17 +1,17 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import urllib
-import tarfile
-from StringIO import StringIO
+from collections import defaultdict
 from ConfigParser import ConfigParser
-import subprocess
+from logging import getLogger, basicConfig
+from StringIO import StringIO
 import os
 import outbox
-import sys
-from logging import getLogger, basicConfig
-from collections import defaultdict
 import shutil
+import subprocess
+import sys
+import tarfile
+import urllib
 
 basicConfig()
 logger = getLogger(__name__)
