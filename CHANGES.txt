@@ -4,7 +4,8 @@ Changes
 0.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Make email-message more verbose
+  [pbauer]
 
 
 0.1.0 (2012-09-06)
