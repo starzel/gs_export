@@ -16,6 +16,17 @@ import urllib
 basicConfig()
 logger = getLogger(__name__)
 
+def check_output(*popenargs, **kwargs):
+    process = subprocess.Popen(stdout=subprocess.PIPE, *popenargs, **kwargs)
+    output, unused_err = process.communicate()
+    retcode = process.poll()
+    if retcode:
+        cmd = kwargs.get('args')
+        if cmd is None:
+            cmd = popenargs[0]
+        raise CalledProcessError(retcode, cmd, output=output)
+    return output
+
 
 class Export(object):
 
@@ -35,9 +46,8 @@ class Export(object):
         c = self.getConfig
         with outbox.Outbox(username=c('mail_user'),
                            password=c('mail_password'),
-                           server=c('mail_server'),
-                           port=c('mail_port'),
-                           mode=c('mail_mode')) as obox:
+                           server=c('mail_server'), port=c('mail_port'
+                           ), mode=c('mail_mode') or None) as obox:
             obox.username = c('mail_from')
             obox.send(outbox.Email(subject='GS Profile needs action: %s/manage_main'
                        % c('base_url'), body=msg,
