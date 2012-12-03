@@ -1,7 +1,7 @@
 Changes
 =======
 
-0.1.1 (unreleased)
+0.1.1 (2012-12-03)
 ------------------
 
 - Make email-message more verbose
