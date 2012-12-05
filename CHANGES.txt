@@ -1,7 +1,7 @@
 Changes
 =======
 
-0.1.2 (unreleased)
+0.1.2 (2012-12-05)
 ------------------
 
 - Work around missing subprocess.check_output() in python 2.6
