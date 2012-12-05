@@ -80,8 +80,8 @@ class Export(object):
                     shutil.rmtree(ignore)
             if create_git_repo:
                 subprocess.call(['git', 'init'])
-            result_status = subprocess.check_output(['git', 'status', '-s'])
-            result_diff = subprocess.check_output(['git', 'diff'])
+            result_status = check_output(['git', 'status', '-s'])
+            result_diff = check_output(['git', 'diff'])
             result = "The generic-setup-export is stored in '" + path + \
                 "'\r\n\r\n" + "Files with changes: \r\n" + result_status + \
                 "\r\n\r\nDetails: \r\n" + result_diff
