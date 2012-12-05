@@ -4,7 +4,8 @@ Changes
 0.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Work around missing subprocess.check_output() in python 2.6
+  [pgerken]
 
 
 0.1.1 (2012-12-03)
